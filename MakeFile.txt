@@ -1,0 +1,11 @@
+.PHONY: venv install run
+venv:
+	python3 -m venv .venv
+	. .venv/bin/activate && pip install -r requirements.txt
+
+install:
+	. .venv/bin/activate && pip install -r requirements.txt
+
+run:
+	PYTHONPATH=. . .venv/bin/activate && python scripts/run_demo.py --items 40 --raters 5 --seed 42
+

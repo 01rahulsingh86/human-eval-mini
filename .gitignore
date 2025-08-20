@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+
+# Mac / system
+.DS_Store
+
+# Generated artifacts
+artifacts/
+*.csv
+*.md
+
